@@ -1,0 +1,15 @@
+{
+  "name": "chars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chars.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@napi-rs/canvas": "^1.1.1"
+  }
+}

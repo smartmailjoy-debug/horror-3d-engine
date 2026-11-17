@@ -1,0 +1,32 @@
+TOWER 13 — render package (Remotion + three.js, 1920x1080, 30 fps, 10:20)
+
+Kya chahiye
+- Windows PC/laptop, NVIDIA GPU (RTX 3050 Ti chalega), 16 GB RAM
+- Node.js 20 ya naya (https://nodejs.org)
+- Disk: ~3 GB free (node_modules + output)
+
+Kaise chalana hai
+1. Zip ko kisi short path pe extract karo, jaise D:\tower13_render
+2. TEST_RENDER.bat -> pehle 30 sec render hoga; jitna time lage x 21 = poori film ka time
+3. PREVIEW.bat  -> browser mein studio khulega, timeline scrub karke koi bhi shot dekh sakte ho
+4. RENDER.bat   -> poori film render: out\TOWER13.mp4
+   Pehli baar npm install hoga (5-10 min).
+5. Agar beech mein ruk jaye ya time zyada lage, parts mein render karo:
+   RENDER_PART.bat 0 5999
+   RENDER_PART.bat 6000 11999
+   RENDER_PART.bat 12000 18599
+   Phir teeno files ko kisi bhi editor mein jod do (ya ffmpeg concat).
+
+Audio
+- public\t13\master.m4a = final mix: narration + radio voices + poora sound design (-14 LUFS)
+
+Credits (video description mein daalna)
+3D models: Poly Haven (CC0) + Sketchfab creators — TheBestStuff (car walkie-talkie), UrNgons (army beds),
+1catalogue, Mercuri-sodyum, JoTrain, 1-3D.com, Mehdi Shahsavan, Xan San, Qweerty, Edgar_koh, Katharina Alexander,
+dvrager (Death Forest – Stranger), epilogueronin, RobbeDumoulin, matousekfoto, FletchTech (Forest Skull), gearspec,
+Paul, JonhGillessen, Renafox (jeep cherokee), Bäka, jvouillon (Willys pickup), vanshtandon321, Maritime Asia Heritage
+Survey, Sereib, Mario_Wallner (Savernake oak), aruspice, Adam Glachan (old forest well), Yury Misiyuk (old house),
+Jagobo, oblivionhero (walkie-talkie), Sousinho (road barrier), trashbinkr (storage tank), MartyPCSR, cha (survival
+props), photon, TechArtBGN, ahuff2239, eugeen (viking watch tower), iGauravRajput (vines), Pixel-bit (wire fence),
+Prateek.Sharma (wooden table).
+Characters, inserts, sound design: original (Mad Angles AI).

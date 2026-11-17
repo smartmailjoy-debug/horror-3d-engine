@@ -1,0 +1,25 @@
+{
+  "name": "horror-3d-engine",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts TOWER13 out/TOWER13.mp4 --gl=angle --concurrency=2 --timeout=900000 --codec=h264 --crf=18 --x264-preset=veryfast",
+    "stills": "node scripts/sr-pick.mjs TOWER13 out/stills stills.json 0.5",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.1.2",
+    "@react-three/postprocessing": "3.0.4",
+    "@remotion/bundler": "4.0.290",
+    "@remotion/cli": "4.0.290",
+    "@remotion/renderer": "4.0.290",
+    "@remotion/three": "4.0.290",
+    "postprocessing": "6.37.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.290",
+    "three": "0.175.0"
+  },
+  "devDependencies": { "@types/react": "19.1.0", "@types/three": "0.175.0", "typescript": "5.6.3" }
+}

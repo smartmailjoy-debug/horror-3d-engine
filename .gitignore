@@ -1,0 +1,8 @@
+node_modules/
+engine/out/
+*.log
+.DS_Store
+# big regenerable mixes (python tools/audio/retime.py + mix.py rebuild them)
+engine/public/t13/vo_mix.wav
+engine/public/t13/fx_mix.wav
+engine/public/t13/sfx/
